@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${storyTitle}"></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .insert {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-header">
+                    <h1>
+                        <span th:text="${storyTitle}"></span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Once upon a <span class="insert" th:text="${noun1}"></span> there was a pixie named <span class="insert" th:text="${name}"></span>.
+                    <span class="insert" th:text="${name}"></span> was a very <span class="insert" th:text="${adj1}"></span> pixie, and always wanted to
+                    <span class="insert" th:text="${activity}"></span>.
+                    Their favorite food was <span class="insert" th:text="${food}"></span>, so when <span class="insert" th:text="${name}"></span> saw a
+                    whole bunch of it at the <span class="insert" th:text="${place}"></span>, they were ALL OVER IT.
+                </p>
+                <p>
+                    Unfortunately for <span class="insert" th:text="${name}"></span>, <span class="insert" th:text="${animal}"></span> was guarding the food.
+                    <span class="insert" th:text="${animal}"></span> didn't like <span class="insert" th:text="${name}"></span> because one time
+                    <span class="insert" th:text="${name}"></span> <span class="insert" th:text="${describeAPrank}"></span>.
+                    <span class="insert" th:text="${animal}"></span> was not going to share the food.
+                </p>
+                <p>
+                    The <span class="insert" th:text="${adj2}"></span> pixie <span class="insert" th:text="${verb1}"></span>ed and decided to
+                    <span class="insert" th:text="${verb2}"></span>.  <span class="insert" th:text="${animal}"></span> was confused by the pixie's
+                    behavior and <span class="insert" th:text="${name}"></span> managed to snag a <span class="insert" th:text="${size}"></span> piece of
+                    <span class="insert" th:text="${food}"></span>!  <span class="insert" th:text="${name}"></span> nommed their snack and went home satisfied.
+                    There would be more chances to get <span class="insert" th:text="${food}"></span> tomorrow!
+                </p>
+
+                <p>
+                    <a href="/" class="btn btn-primary">DO IT AGAIN!!</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
